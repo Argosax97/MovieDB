@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #373b69;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #373b69;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(58, 3, 97, 0.753);
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(106, 49, 146, 0.753);
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 5vw;
+  background-color: rgb(31, 65, 216);
+  transition: 1s;
+}
+.loading-off {
+  display: none;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+header {
+  width: 100%;
+  background-color: rgba(96, 6, 160, 0.753);
+  box-shadow: 0 5px 15px rgb(96 6 160 / 70%);
+  height: 75px;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  border: none;
+  margin-right: 10%;
+}
+.search {
+  width: 100%;
+  border: none;
+  text-indent: 0.5rem;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+.search:focus {
+  outline: solid #9396b1;
+  transition: 0.1s ease-in-out;
+}
+.search-icon {
+  color: white;
+  font-size: 2rem;
+  margin: 3px;
+}
+.search-icon:hover {
+  color: #9396b1;
+}
+.left_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 15%;
+  height: 100vh;
+  background: rgba(62, 11, 99, 0.993);
+}
+.left_container h1 {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #9ba5ff;
+  border-bottom: solid;
+}
+.movie-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #9ba5ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.genreElement:hover {
+  color: #d4d8fd;
+}
+.genreElement-toggle {
+  color: rgb(255, 255, 255);
+  border-bottom: solid;
+  border-bottom-right-radius: 15px;
+}
+.footer i {
+  font-size: 2rem;
+  margin:  5px;
+  color: #9ba5ff;
+}
+.footer i:hover {
+  color: #d4d8fd;
+}
+.footer i:active {
+  color: #848fee;
+}
+.movies-container {
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 85%;
+  padding: 15px;
+  margin-top: 75px;
+}
+.movieList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  width: 200px;
+  height: 350px;
+  margin: 10px;
+  color: white;
+}
+.movieList img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.movie-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 4px 5px rgb(15, 15, 15, 0.5);
+  background-color: #6b6f91;
+  height: 100%;
+
+  overflow-y: hidden;
+}
+.movie-title h2 {
+  font-size: 1em;
+  padding: 0.5rem;
+  word-wrap: break-word;
+}
+.movie-title .vote {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 7px;
+  font-weight: bold;
+  background-color: #20265f;
+}
+.movie-title span.green {
+  color: rgb(0, 163, 41);
+}
+.movie-title span.orange {
+  color: orange;
+}
+.movie-title span.red {
+  color: rgb(212, 2, 2);
+}
+
+.page-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #9396b1;
+}
+.page-controls button {
+  margin-left: 10%;
+  padding: 4px 10px;
+  font-size: 1.5rem;
+  background: #20265f;
+  border: none;
+  cursor: pointer;
+  color: #9396b1;
+}
+.page-controls button:hover {
+  background: #9396b1;
+  color: #20265f;
+}
+.page-controls button:active {
+  background: #20265f62;
+  color: #20265f;
+}
+.prev-btn {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.next-btn {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
